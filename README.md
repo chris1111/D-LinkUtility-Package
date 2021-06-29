@@ -34,7 +34,7 @@
 
 ## Follow Video ⬇︎
 
-[![Modular Image Creation](https://i25.servimg.com/u/f25/18/50/18/69/video15.png)](https://youtu.be/zjtOGSdbtVs)
+[![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/zjtOGSdbtVs)
 
 
 

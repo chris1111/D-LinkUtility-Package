@@ -48,6 +48,6 @@
 #### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Uninstall%20D-LinkUtility.pkg)
 
 
-Connect WIFI after plug in the Adapter ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/Connect D-LinkUtility.zip)
+Connect WIFI after plug in the Adapter ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/raw/main/Connect%20D-LinkUtility.zip)
 
  

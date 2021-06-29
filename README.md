@@ -30,7 +30,7 @@
 - RT3573,RT5572,RT3572
 
 
-#### Download ➤ V1 [D-LinkUtility-Package.zip]()
+#### Download ➤ V1 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V1)
 
 ## Follow Video ⬇︎
 

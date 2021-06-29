@@ -44,20 +44,13 @@
 [![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/zjtOGSdbtVs)
 
 
-
-#### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Uninstall%20D-LinkUtility.pkg)
-
-
-Download ➤ Connect WIFI after plug in the Adapter ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/raw/main/Connect%20D-LinkUtility.zip) 
-
-![Screen Shot ](https://user-images.githubusercontent.com/6248794/123831606-815cb380-d8d2-11eb-89f7-904a42c72c92.png)
-
 - See Video about Connect WIFI after plug in the Adapter ⬇︎
 
 - [![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/kgV9iCXsNrE)
 
+![Screen Shot ](https://user-images.githubusercontent.com/6248794/123831606-815cb380-d8d2-11eb-89f7-904a42c72c92.png)
 
+Download ➤ Connect WIFI after plug in the Adapter ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/raw/main/Connect%20D-LinkUtility.zip) 
 
-
-
+#### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Uninstall%20D-LinkUtility.pkg)
  

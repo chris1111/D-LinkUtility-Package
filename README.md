@@ -45,6 +45,6 @@
 
 
 
-#### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package)
+#### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Uninstall%20D-LinkUtility.pkg)
 
  

@@ -1,0 +1,139 @@
+#!/bin/bash
+# D-LinkUtility-Package
+# Copyright (c) 2021, chris1111. All Right Reserved
+# Credit: Acidanthera
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+# Vars
+apptitle="D-LinkUtility-Package"
+version="1.0"
+# Set Icon directory and file 
+export ICNS=$(dirname "${0}")
+iconfile="$ICNS/AppIcon.icns"
+Sleep 1
+echo "DETAILS:HIDE"
+echo "PROGRESS:0"
+response=$(osascript -e 'tell app "System Events" to display dialog "
+Select an option 
+Install with Opencore or Install on Library / Extensions\nCancel for Quit" buttons {"Cancel", "Install OC" ,"Install Library/Extensions"} default button 3 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
+action=$(echo $response | cut -d ':' -f2)
+
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+
+if [ "$action" == "Install OC" ] ; then
+  osascript -e 'display notification "Program Start" with title "'"$apptitle"'" subtitle "User Select Install OC"'
+echo "DETAILS:HIDE"
+echo "PROGRESS:0"
+sleep 1
+echo "PROGRESS:10"
+sleep 1
+echo "PROGRESS:20"
+sleep 1
+echo "Install D-LinkUtility-Package"
+Sleep 1
+cp -r ./ActiveProfileSetting.plist $HOME/Library/Preferences
+Sleep 1
+cp -r ./AdvancedProfileSetting.plist $HOME/Library/Preferences
+Sleep 1
+cp -r ./D-LinkUtility /Applications
+sleep 1
+echo "PROGRESS:30"
+echo "Install Done."
+Sleep 1
+echo "PROGRESS:40"
+sleep 1
+echo "PROGRESS:50"
+sleep 1
+echo "PROGRESS:60"
+sleep 2
+echo "PROGRESS:80"
+sleep 1
+echo "PROGRESS:90"
+sleep 1
+echo "PROGRESS:100"
+echo "Open OCD-LinkUtility.pkg"
+echo "DETAILS:SHOW"
+Sleep 1
+Open ./OCD-LinkUtility.pkg
+Sleep 3
+echo "Done"
+echo "QUITAPP"
+
+
+
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+
+
+fi
+
+
+# Exit if Canceled
+if [ "$action" == "Cancel" ] ; then
+  osascript -e 'display notification "Program close" with title "'"$apptitle"'" subtitle "User Cancel"'
+echo "User Cancel"
+Sleep 1
+echo "QUITAPP"
+
+  exit 0
+fi
+
+if [ "$action" == "Install Library/Extensions" ] ; then
+  osascript -e 'display notification "Program " with title "'"$apptitle"'" subtitle "User Select Install Library/Extensions"'
+echo "DETAILS:HIDE"
+echo "PROGRESS:0"
+sleep 1
+echo "PROGRESS:10"
+sleep 1
+echo "PROGRESS:20"
+sleep 1
+echo "Install D-LinkUtility-Package"
+Sleep 1
+cp -r ./ActiveProfileSetting.plist $HOME/Library/Preferences
+Sleep 1
+cp -r ./AdvancedProfileSetting.plist $HOME/Library/Preferences
+Sleep 1
+cp -r ./D-LinkUtility /Applications
+sleep 1
+echo "PROGRESS:30"
+echo "Install Done."
+Sleep 1
+echo "PROGRESS:40"
+sleep 1
+echo "PROGRESS:50"
+sleep 1
+echo "PROGRESS:60"
+sleep 2
+echo "PROGRESS:80"
+sleep 1
+echo "PROGRESS:90"
+sleep 1
+echo "PROGRESS:100"
+echo "Open D-LinkUtility.pkg"
+echo "DETAILS:SHOW"
+Sleep 1
+Open ./D-LinkUtility.pkg
+Sleep 3
+echo "Done"
+echo "QUITAPP"
+echo ""
+
+
+fi
+

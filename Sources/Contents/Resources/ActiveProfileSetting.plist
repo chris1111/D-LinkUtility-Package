@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>AC Power CAM</key>
+		<string>0</string>
+		<key>Active Profile Flag</key>
+		<string>YES</string>
+		<key>Authentication Type</key>
+		<string>3</string>
+		<key>BSSID</key>
+		<string>MAC ADRESSE</string>
+		<key>Channel</key>
+		<string>1</string>
+		<key>Encryption Type</key>
+		<string>1</string>
+		<key>Fragmentation Threshold</key>
+		<string>2346</string>
+		<key>Hidden</key>
+		<string>0</string>
+		<key>Network Type</key>
+		<string>1</string>
+		<key>Power Save Mode</key>
+		<string>0</string>
+		<key>Preamble Type</key>
+		<string>0</string>
+		<key>Profile Name</key>
+		<string>NETWORK NAME</string>
+		<key>RTS Threshold</key>
+		<string>2347</string>
+		<key>SSID</key>
+		<string>NETWORK NAME</string>
+		<key>Tx Power</key>
+		<string>0</string>
+		<key>WEPKey1</key>
+		<string></string>
+		<key>WEPKey1 Type</key>
+		<string>0</string>
+		<key>WEPKey2</key>
+		<string></string>
+		<key>WEPKey2 Type</key>
+		<string>0</string>
+		<key>WEPKey3</key>
+		<string></string>
+		<key>WEPKey3 Type</key>
+		<string>0</string>
+		<key>WEPKey4</key>
+		<string></string>
+		<key>WEPKey4 Type</key>
+		<string>0</string>
+		<key>WEPKeyUse</key>
+		<string>0</string>
+		<key>WPAPSK</key>
+		<string>WIFI NETWORK PASWORD</string>
+	</dict>
+</array>
+</plist>

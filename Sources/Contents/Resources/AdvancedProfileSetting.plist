@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Ad Hoc Mode</key>
+		<string>1</string>
+		<key>BG Protection</key>
+		<string>0</string>
+		<key>Tx Burst</key>
+		<string>1</string>
+		<key>Tx Rate</key>
+		<string>0</string>
+		<key>Wireless Mode</key>
+		<string>9</string>
+	</dict>
+</array>
+</plist>

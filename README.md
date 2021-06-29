@@ -4,7 +4,7 @@
 
 ### An old D-Link project that I redid to adapt it to macOS Big Sur 11 and macOS Monterey 12
 
-### Works for macOS Big Sur 11 and macOS Monterey 12
+### Works for macOS Big Sur 11 and macOS Monterey 12 only!
 
 
 - SIP Security and Gatekeeper must be disable 

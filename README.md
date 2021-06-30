@@ -65,5 +65,5 @@
 
 Download ➤ Connect WIFI after plug in the Adapter (For Release V1 only) ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/raw/main/Connect%20D-LinkUtility.zip) 
 
-#### Uninstall Program ➤ (For Release V1 only) [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Uninstall%20D-LinkUtility.pkg)
+#### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/raw/main/UninstallD-LinkUtility.pkg)
  

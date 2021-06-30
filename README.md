@@ -33,7 +33,9 @@
 - RT5370,RT2870,RT3071,RT2770,RT3573,RT5572,RT3573,
 - RT3573,RT5572,RT3572
 
-#### Download ➤ V2 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V2)
+#### Download Latest release ➤ V2 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V2)
+
+#### Download first release ➤ V1 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V1)
 
 #### See Picture Release V2 ⬇︎
 - Now the program Install or Uninstall options.
@@ -44,8 +46,6 @@
 
 ![MiniTaskUSB-DWA160](https://user-images.githubusercontent.com/6248794/123990166-89caf200-d997-11eb-8ec0-39d2290fae81.png)
 
-
-#### Download ➤ V1 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V1)
 
 ## Follow Video  from Monterey 12 Install /Library/Extensions⬇︎
 

@@ -66,4 +66,7 @@
 Download ➤ Connect WIFI after plug in the Adapter (For Release V1 only) ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/raw/main/Connect%20D-LinkUtility.zip) 
 
 #### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/raw/main/UninstallD-LinkUtility.pkg)
- 
+
+- Download ➤ [WIFI Speed Test.zip](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter/files/6754911/WIFI.Speed.Test.zip)
+
+![Screen Shot ](https://user-images.githubusercontent.com/6248794/124283398-db9b8580-db19-11eb-87db-56251f29a5a5.png) 

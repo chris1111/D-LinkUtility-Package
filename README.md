@@ -29,9 +29,7 @@
 
 
 ### Support Drivers:
-- RT3572,RT3072,RT3070,RT3573,MT7610,MT7610,MT7610,
-- RT5370,RT2870,RT3071,RT2770,RT3573,RT5572,RT3573,
-- RT3573,RT5572,RT3572
+- MT7601, MT7610, RT5370, RT2870, RT3071, RT2770, RT5572, RT3572, RT3072, RT3070, RT3573
 
 #### Download Latest release ➤ V2 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V2)
 

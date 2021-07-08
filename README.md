@@ -53,10 +53,6 @@
 [![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/qRquRXxF3wg)
 
 
-- See Video about Connect WIFI after plug in the Adapter ⬇︎
-
-- [![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/kgV9iCXsNrE)
-
 ![button](https://user-images.githubusercontent.com/6248794/123955656-d7cffd80-d977-11eb-8e71-feb799347edd.png)
 
 Download ➤ Connect WIFI after plug in the Adapter (For Release V1 only) ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/raw/main/Connect%20D-LinkUtility.zip) 

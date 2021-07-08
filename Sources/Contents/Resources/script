@@ -23,15 +23,51 @@ echo "DETAILS:HIDE"
 echo "PROGRESS:0"
 response=$(osascript -e 'tell app "System Events" to display dialog "
 Select an option 
-Install with Opencore or Install on Library / Extensions\nCancel for Quit" buttons {"Cancel", "Install OC" ,"Install Library/Extensions"} default button 3 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+Install Utility or Uninstall\nCancel for Quit" buttons {"Cancel", "Install Utility" ,"Uninstall Utility"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
 action=$(echo $response | cut -d ':' -f2)
+
+# Exit if Canceled
+if [ ! "$action" ] ; then
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+echo "QUITAPP"
+  exit 0
+fi
 
 osascript <<EOD
   tell application "D-LinkUtility-Package"
       activate
   end tell
 EOD
+if [ "$action" == "Uninstall Utility" ] ; then
+Open ./UninstallD-LinkUtility.pkg
+Sleep 1
+echo "QUITAPP"
+fi
+
+if [ "$action" == "Install Utility" ] ; then
+
+response=$(osascript -e 'tell app "System Events" to display dialog "
+Select an option 
+Install with Opencore or Install on Library / Extensions\nCancel for Quit" buttons {"Cancel", "Install OC" ,"Install Library/Extensions"} default button 3 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
+action=$(echo $response | cut -d ':' -f2)
+
+
+
+
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+
+# Exit if Canceled
+if [ ! "$action" ] ; then
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+echo "QUITAPP"
+  exit 0
+fi
 
 if [ "$action" == "Install OC" ] ; then
   osascript -e 'display notification "Program Start" with title "'"$apptitle"'" subtitle "User Select Install OC"'
@@ -44,12 +80,13 @@ echo "PROGRESS:20"
 sleep 1
 echo "Install D-LinkUtility-Package"
 Sleep 1
-cp -r ./ActiveProfileSetting.plist $HOME/Library/Preferences
+cp -r ./ActiveProfileSetting.plist /Private/tmp
 Sleep 1
 cp -r ./AdvancedProfileSetting.plist $HOME/Library/Preferences
 Sleep 1
 cp -r ./D-LinkUtility /Applications
 sleep 1
+cp -RP ./"Connect D-LinkUtility.app" $HOME/Desktop
 echo "PROGRESS:30"
 echo "Install Done."
 Sleep 1
@@ -61,6 +98,15 @@ echo "PROGRESS:60"
 sleep 2
 echo "PROGRESS:80"
 sleep 1
+echo "Open PlistEdit"
+osascript ./PlistEdit.app
+Sleep 1
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+
 echo "PROGRESS:90"
 sleep 1
 echo "PROGRESS:100"
@@ -105,11 +151,13 @@ echo "PROGRESS:20"
 sleep 1
 echo "Install D-LinkUtility-Package"
 Sleep 1
-cp -r ./ActiveProfileSetting.plist $HOME/Library/Preferences
+cp -r ./ActiveProfileSetting.plist /Private/tmp
 Sleep 1
 cp -r ./AdvancedProfileSetting.plist $HOME/Library/Preferences
 Sleep 1
 cp -r ./D-LinkUtility /Applications
+Sleep 1
+cp -RP ./"Connect D-LinkUtility.app" $HOME/Desktop
 sleep 1
 echo "PROGRESS:30"
 echo "Install Done."
@@ -122,6 +170,15 @@ echo "PROGRESS:60"
 sleep 2
 echo "PROGRESS:80"
 sleep 1
+echo "Open PlistEdit"
+osascript ./PlistEdit.app
+Sleep 1
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+
 echo "PROGRESS:90"
 sleep 1
 echo "PROGRESS:100"
@@ -133,7 +190,7 @@ Sleep 3
 echo "Done"
 echo "QUITAPP"
 echo ""
+fi
 
 
 fi
-

@@ -38,7 +38,9 @@
 #### Download Latest release ➤ V4 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V4)
 
 
-## Follow Video  from Monterey 12 
+## 🔽 Follow Video  from Monterey 12
+- Video in three stages, NO-1 /Library/Extensions, NO-2 clover, NO-3 OpenCore
+- NOTE: stages, NO-1 /Library/Extension takes more time; you can advance ⏭ the video to the installation stage.
 
 [![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/tl9Jn6XC1C4)
 

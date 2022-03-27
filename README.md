@@ -21,44 +21,24 @@
 ## For Real Mac and Hackintosh
 ## For /Library/Extensions
 - Install  ➣ /Library/Extensions/RT2870USBWirelessDriver.kext
-- Install  ➣ /Applications/D-LinkUtility
+- Install  ➣ /Applications/Wifi-Utility.app
 
 ## For OpenCore
 - Install  ➣ /RT2870USBWirelessDriver.kext EFI System Partition /EFI/OC/kexts.
-- Install  ➣ /Applications/D-LinkUtility
+- Install  ➣ /Applications/Wifi-Utility.app
 
+## For Clover
+- Install  ➣ /RT2870USBWirelessDriver.kext EFI System Partition /EFI/CLOVER/kexts/Other.
+- Install  ➣ /Applications/Wifi-Utility.app
 
 ### Support Drivers:
 - MT7601, MT7610, RT5370, RT2870, RT3071, RT2770, RT5572, RT3572, RT3072, RT3070, RT3573, MT7621U
 
-#### Download Latest release ➤ V3 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V3)
-
-#### See Picture Release V3 ⬇︎
-- Now the program Install or Uninstall options.
-
-![MiniTaskUSB-DWA160 2](https://user-images.githubusercontent.com/6248794/123990241-97807780-d997-11eb-9510-7c8dbd4c4be7.png)
-
-- Now the Connect D-LinkUtility.app is install on Desktop.
-
-![MiniTaskUSB-DWA160](https://user-images.githubusercontent.com/6248794/123990166-89caf200-d997-11eb-8ec0-39d2290fae81.png)
+#### Download Latest release ➤ V4 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V4)
 
 
-## Follow Video  from Monterey 12 Install /Library/Extensions⬇︎
+## Follow Video  from Monterey 12 
 
 [![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/1Ao4OYNOjQ0)
 
 
-## Follow Video  from Monterey 12 Install OpenCore⬇︎
-
-[![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/qRquRXxF3wg)
-
-
-![button](https://user-images.githubusercontent.com/6248794/123955656-d7cffd80-d977-11eb-8e71-feb799347edd.png)
-
-Download ➤ Connect WIFI after plug in the Adapter (For Release V1 only) ➤ [Connect D-LinkUtility](https://github.com/chris1111/D-LinkUtility-Package/raw/main/Connect%20D-LinkUtility.zip) 
-
-#### Uninstall Program ➤ [Uninstall D-LinkUtility.pkg](https://github.com/chris1111/D-LinkUtility-Package/raw/main/UninstallD-LinkUtility.pkg)
-
-- Download ➤ [WIFI Speed Test.zip](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter/files/6754911/WIFI.Speed.Test.zip)
-
-![Screen Shot ](https://user-images.githubusercontent.com/6248794/124283398-db9b8580-db19-11eb-87db-56251f29a5a5.png) 

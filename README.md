@@ -47,3 +47,22 @@
 [![Modular Image Creation](https://i87.servimg.com/u/f87/17/99/48/98/68747410.png)](https://youtu.be/tl9Jn6XC1C4)
 
 
+- Users who have an active Wifi service can create an Internet Sharing with a Wifi Access point and you can exit the Wifi-Utility.app
+## View Setup: ⬇︎
+<details> 
+  <summary>View list Update</summary>
+  
+
+![Screen Shot 1](https://user-images.githubusercontent.com/6248794/160517869-2626effb-d8ee-4855-b777-02be9e6f1261.png)
+
+![Screen Shot 2](https://user-images.githubusercontent.com/6248794/160517871-692cb5be-e92b-45aa-a9ee-126ec145a62c.png)
+
+![Screen Shot 3](https://user-images.githubusercontent.com/6248794/160517872-a3b15697-292a-4893-b2ca-9afd7e185b2f.png)
+
+![Screen Shot 4](https://user-images.githubusercontent.com/6248794/160517873-840af00c-3e8e-4996-875e-61d68262811f.png)
+
+![Screen Shot 5](https://user-images.githubusercontent.com/6248794/160517875-ad58fe9e-ddbf-409d-9e8a-0aa38aace7bd.png)
+
+  
+</details>
+

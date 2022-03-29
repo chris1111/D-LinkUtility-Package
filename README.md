@@ -50,7 +50,7 @@
 - Users who have an active Wifi service can create an Internet Sharing with a Wifi Access point and you can exit the Wifi-Utility.app
 ## View Setup: ⬇︎
 <details> 
-  <summary>View list Update</summary>
+  <summary>Setup Access point connection</summary>
   
 
 ![Screen Shot 1](https://user-images.githubusercontent.com/6248794/160517869-2626effb-d8ee-4855-b777-02be9e6f1261.png)

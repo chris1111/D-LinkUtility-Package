@@ -1,6 +1,6 @@
 #!/bin/bash
 # D-LinkUtility-Package
-# Copyright (c) 2021, chris1111. All Right Reserved
+# Copyright (c) 2021, 2022 chris1111. All Right Reserved
 # Credit: Acidanthera
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -22,6 +22,8 @@ Sleep 1
 echo "DETAILS:HIDE"
 echo "PROGRESS:0"
 response=$(osascript -e 'tell app "System Events" to display dialog "
+This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13 only!
+
 Select an option 
 Install Utility or Uninstall\nCancel for Quit" buttons {"Cancel", "Install Utility" ,"Uninstall Utility"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
@@ -40,16 +42,14 @@ osascript <<EOD
   end tell
 EOD
 if [ "$action" == "Uninstall Utility" ] ; then
-Open ./UninstallD-LinkUtility.pkg
+Open ./Input/UninstallD-LinkUtility.pkg
 Sleep 1
 echo "QUITAPP"
 fi
 
-if [ "$action" == "Install Utility" ] ; then
-
 response=$(osascript -e 'tell app "System Events" to display dialog "
 Select an option 
-Install with Opencore or Install on Library / Extensions\nCancel for Quit" buttons {"Cancel", "Install OC" ,"Install Library/Extensions"} default button 3 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+Install with Bootloader or Install on /Library/Extensions\n" buttons {"Install OC", "Install Clover" ,"Install /Library/Extensions"} default button 1 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
 action=$(echo $response | cut -d ':' -f2)
 
@@ -62,12 +62,6 @@ osascript <<EOD
   end tell
 EOD
 
-# Exit if Canceled
-if [ ! "$action" ] ; then
-  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
-echo "QUITAPP"
-  exit 0
-fi
 
 if [ "$action" == "Install OC" ] ; then
   osascript -e 'display notification "Program Start" with title "'"$apptitle"'" subtitle "User Select Install OC"'
@@ -78,17 +72,8 @@ echo "PROGRESS:10"
 sleep 1
 echo "PROGRESS:20"
 sleep 1
-echo "Install D-LinkUtility-Package"
-Sleep 1
-cp -r ./ActiveProfileSetting.plist /Private/tmp
-Sleep 1
-cp -r ./AdvancedProfileSetting.plist $HOME/Library/Preferences
-Sleep 1
-cp -r ./D-LinkUtility /Applications
-sleep 1
-cp -RP ./"Connect D-LinkUtility.app" $HOME/Desktop
 echo "PROGRESS:30"
-echo "Install Done."
+echo "Install Progres."
 Sleep 1
 echo "PROGRESS:40"
 sleep 1
@@ -98,49 +83,154 @@ echo "PROGRESS:60"
 sleep 2
 echo "PROGRESS:80"
 sleep 1
-echo "Open PlistEdit"
-osascript ./PlistEdit.app
-Sleep 1
 osascript <<EOD
   tell application "D-LinkUtility-Package"
       activate
   end tell
 EOD
+sleep 1
+# Select Confirm Install
+response=$(osascript -e 'tell app "System Events" to display dialog "
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+By confirming that you agree to install this program on your current system, you will need to enter your password to complete the installation.
+This program will install RT2870USBWirelessDriver.kext 
+EFI System Partition /EFI/OC/kexts.
+After Installation Plug the Mediatek USB adapter then Restart the Mac!		
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+Cancel for Exit" buttons {"Cancel","Confirm Install"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
+action=$(echo $response | cut -d ':' -f2)
+
+ #  Post Installer is user select Confirm Install
+  if [ "$action" == "Confirm Install" ] ; then
+    # run the pkg
+    echo "Install Package"
+    cp -r ./Input/Wifi-Utility.app /Applications
+    osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Wifi-Utility.app", hidden:false}'
+    Sleep 1
+    Open -a /Applications/Wifi-Utility.app
+    echo "Install OCD-LinkUtility.pkg"
+    osascript -e 'do shell script "installer -allowUntrusted -verboseR -pkg ./Input/OCD-LinkUtility.pkg -target /" with administrator privileges'
+echo "Install Utility-Package Done"
+Sleep 1
+cp -r ./Input/ActiveProfileSetting.plist /Private/tmp
+Sleep 1
+cp -r ./Input/AdvancedProfileSetting.plist $HOME/Library/Preferences
+Sleep 1
+echo "Open PlistEdit"
+osascript ./Input/PlistEdit.app
 echo "PROGRESS:90"
 sleep 1
 echo "PROGRESS:100"
-echo "Open OCD-LinkUtility.pkg"
 echo "DETAILS:SHOW"
-Sleep 1
-Open ./OCD-LinkUtility.pkg
 Sleep 3
-echo "Done"
-echo "QUITAPP"
-
-
-
 osascript <<EOD
   tell application "D-LinkUtility-Package"
       activate
   end tell
 EOD
+echo "Install Done"
 
-
-fi
+  fi
 
 
 # Exit if Canceled
 if [ "$action" == "Cancel" ] ; then
-  osascript -e 'display notification "Program close" with title "'"$apptitle"'" subtitle "User Cancel"'
-echo "User Cancel"
-Sleep 1
-echo "QUITAPP"
-
+  osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+  echo "Program closing in 2 seconds User cancelled"
+  Sleep 2
+  echo "QUITAPP"
   exit 0
 fi
 
-if [ "$action" == "Install Library/Extensions" ] ; then
+fi
+
+if [ "$action" == "Install Clover" ] ; then
+  osascript -e 'display notification "Program Start" with title "'"$apptitle"'" subtitle "User Select Install Clover"'
+echo "DETAILS:HIDE"
+echo "PROGRESS:0"
+sleep 1
+echo "PROGRESS:10"
+sleep 1
+echo "PROGRESS:20"
+sleep 1
+echo "PROGRESS:30"
+echo "Install Progres."
+Sleep 1
+echo "PROGRESS:40"
+sleep 1
+echo "PROGRESS:50"
+sleep 1
+echo "PROGRESS:60"
+sleep 2
+echo "PROGRESS:80"
+sleep 1
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+sleep 1
+# Select Confirm Install
+response=$(osascript -e 'tell app "System Events" to display dialog "
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+By confirming that you agree to install this program on your current system, you will need to enter your password to complete the installation.
+This program will install RT2870USBWirelessDriver.kext 
+EFI System Partition /EFI/CLOVER/kexts/Other.
+After Installation Plug the Mediatek USB adapter then Restart the Mac!		
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+Cancel for Exit" buttons {"Cancel","Confirm Install"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
+action=$(echo $response | cut -d ':' -f2)
+
+ #  Post Installer is user select Confirm Install
+  if [ "$action" == "Confirm Install" ] ; then
+    # run the pkg
+    echo "Install Package"
+    cp -r ./Input/Wifi-Utility.app /Applications
+    osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Wifi-Utility.app", hidden:false}'
+    Sleep 1
+    Open -a /Applications/Wifi-Utility.app
+    echo "Install CloverD-LinkUtility.pkg"
+    osascript -e 'do shell script "installer -allowUntrusted -verboseR -pkg ./Input/CloverD-LinkUtility.pkg -target /" with administrator privileges'
+echo "Install Utility-Package Done"
+Sleep 1
+cp -r ./Input/ActiveProfileSetting.plist /Private/tmp
+Sleep 1
+cp -r ./Input/AdvancedProfileSetting.plist $HOME/Library/Preferences
+sleep 1
+echo "Open PlistEdit"
+osascript ./Input/PlistEdit.app
+echo "PROGRESS:90"
+sleep 1
+echo "PROGRESS:100"
+echo "DETAILS:SHOW"
+Sleep 3
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+echo "Install Done"
+
+
+  fi
+
+
+# Exit if Canceled
+if [ "$action" == "Cancel" ] ; then
+  osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+  echo "Program closing in 2 seconds User cancelled"
+  Sleep 2
+  echo "QUITAPP"
+  exit 0
+fi
+
+fi
+
+if [ "$action" == "Install /Library/Extensions" ] ; then
   osascript -e 'display notification "Program " with title "'"$apptitle"'" subtitle "User Select Install Library/Extensions"'
 echo "DETAILS:HIDE"
 echo "PROGRESS:0"
@@ -149,18 +239,8 @@ echo "PROGRESS:10"
 sleep 1
 echo "PROGRESS:20"
 sleep 1
-echo "Install D-LinkUtility-Package"
-Sleep 1
-cp -r ./ActiveProfileSetting.plist /Private/tmp
-Sleep 1
-cp -r ./AdvancedProfileSetting.plist $HOME/Library/Preferences
-Sleep 1
-cp -r ./D-LinkUtility /Applications
-Sleep 1
-cp -RP ./"Connect D-LinkUtility.app" $HOME/Desktop
-sleep 1
 echo "PROGRESS:30"
-echo "Install Done."
+echo "Install Progres."
 Sleep 1
 echo "PROGRESS:40"
 sleep 1
@@ -170,27 +250,72 @@ echo "PROGRESS:60"
 sleep 2
 echo "PROGRESS:80"
 sleep 1
-echo "Open PlistEdit"
-osascript ./PlistEdit.app
-Sleep 1
 osascript <<EOD
   tell application "D-LinkUtility-Package"
       activate
   end tell
 EOD
+sleep 1
+# Select Confirm Install
+response=$(osascript -e 'tell app "System Events" to display dialog "
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+By confirming that you agree to install this program on your current system, you will need to enter your password to complete the installation.
+This program will install RT2870USBWirelessDriver.kext 
+To the /Library/Extensions. You will need to click OK on the Security Popup.
 
+Go to System Preferences → Security & Privacy and approve the Mediatek kernel extension.
+You may need to restart your Mac for the driver to be loaded.
+Plug the Mediatek USB adapter then Restart the Mac!		
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+Cancel for Exit" buttons {"Cancel","Confirm Install"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
+action=$(echo $response | cut -d ':' -f2)
+
+ #  Post Installer is user select Confirm Install
+  if [ "$action" == "Confirm Install" ] ; then
+    # run the pkg
+    echo "Install Package"
+    cp -r ./Input/Wifi-Utility.app /Applications
+    osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Wifi-Utility.app", hidden:false}'
+    Sleep 1
+    Open -a /Applications/Wifi-Utility.app
+    echo "Install D-LinkUtility.pkg"
+    osascript -e 'do shell script "installer -allowUntrusted -verboseR -pkg ./Input/D-LinkUtility.pkg -target /" with administrator privileges'
+echo "Install Utility-Package Done"
+Sleep 1
+cp -r ./Input/ActiveProfileSetting.plist /Private/tmp
+Sleep 1
+cp -r ./Input/AdvancedProfileSetting.plist $HOME/Library/Preferences
+sleep 1
+echo "Open PlistEdit"
+osascript ./Input/PlistEdit.app
 echo "PROGRESS:90"
 sleep 1
 echo "PROGRESS:100"
-echo "Open D-LinkUtility.pkg"
 echo "DETAILS:SHOW"
-Sleep 1
-Open ./D-LinkUtility.pkg
 Sleep 3
-echo "Done"
-echo "QUITAPP"
-echo ""
+osascript <<EOD
+  tell application "D-LinkUtility-Package"
+      activate
+  end tell
+EOD
+echo "Install Done"
+
+
+  fi
+
+
+# Exit if Canceled
+if [ "$action" == "Cancel" ] ; then
+  osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+  echo "Program closing in 2 seconds User cancelled"
+  Sleep 2
+  echo "QUITAPP"
+  exit 0
+fi
+
 fi
 
 
-fi
+exit 0

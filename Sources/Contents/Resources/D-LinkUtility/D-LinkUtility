@@ -1,5 +1,0 @@
-#!/bin/sh
-
-. /etc/rc.common
-
-/Applications/D-LinkUtility/AppDaemonUSB

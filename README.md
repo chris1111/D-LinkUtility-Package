@@ -62,6 +62,5 @@
 
 ![Screen Shot 5](https://user-images.githubusercontent.com/6248794/160517875-ad58fe9e-ddbf-409d-9e8a-0aa38aace7bd.png)
 
-  
-</details>
+ </details>
 

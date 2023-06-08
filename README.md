@@ -1,6 +1,6 @@
 # D-LinkUtility-Package
 
-### Update 08 May 2023 V6 Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13
+### Update 08 June 2023 V6 Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma
 
 ![Screen Shot](https://user-images.githubusercontent.com/6248794/160261973-91d444cb-3144-455b-96fa-2ba8bf464798.png)
 

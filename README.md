@@ -1,13 +1,12 @@
 # D-LinkUtility-Package
 
-## Update 16 Oct 2022 V5 Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13
+### Update 08 June 2023 V6 Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma
 
 ![Screen Shot](https://user-images.githubusercontent.com/6248794/160261973-91d444cb-3144-455b-96fa-2ba8bf464798.png)
 
 ### An old D-Link project that I redid to adapt it to macOS Big Sur 11 and macOS Monterey 12
 
-###  This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13 only!
-
+###  This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14 only!
 
 - SIP Security and Gatekeeper must be disable 
 

@@ -8,3 +8,15 @@ Use this PlistEdit.app [PlistEdit.zip](https://github.com/chris1111/D-LinkUtilit
 You need this Infos before using the App: ⬇︎
 
 ![Screenshot](https://github.com/chris1111/D-LinkUtility-Package/assets/6248794/b20dd663-8394-48ee-acda-ea09daf22af6)
+
+
+Result Infos: ⬇︎
+
+MAC Address:
+`ecb1d72d86e0`
+
+Network Name:
+`Linksys12345`
+
+Password:
+`abcde12345`

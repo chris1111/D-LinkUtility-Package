@@ -9,7 +9,9 @@
 ###  This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14 only!
 
 
-- SIP Security and Gatekeeper must be disable 
+- SIP Security and Gatekeeper must be disable
+
+## For Troubleshooting see ➣ [Troubleshooting](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Troubleshooting.md)
 
 ### Credits: 
 - [(chris1111)](https://github.com/chris1111) 

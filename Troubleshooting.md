@@ -8,7 +8,7 @@ Use this PlistEdit.app ➤ [PlistEdit.zip](https://github.com/chris1111/D-LinkUt
 You need this Infos before using the App: ⬇︎
 
 
-![Screenshot](https://github.com/chris1111/D-LinkUtility-Package/assets/6248794/e625d41c-3652-4a90-bf51-eb833b8a0a4b)
+![Screenshot](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Files%20Troubleshooting/Ethernet.png)
 
 
 Result Infos: ⬇︎

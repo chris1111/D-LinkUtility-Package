@@ -11,7 +11,7 @@ You need this Infos before using the App: ⬇︎
 ![Screenshot](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Files%20Troubleshooting/Ethernet.png)
 
 
-Result Infos: ⬇︎
+My result Infos: ⬇︎
 
 MAC Address:
 `ecb1d72d86e0`

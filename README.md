@@ -42,6 +42,8 @@
 
 
 ## 🔽 Follow Video  from Monterey 12
+`You will need to have Router Info before using this program!`
+## View Router Info: ➤ [Router Infos](https://github.com/chris1111/D-LinkUtility-Package/blob/gh-pages/Router-Infos.md)
 - Video in three stages, NO-1 /Library/Extensions, NO-2 clover, NO-3 OpenCore
 - NOTE: stages, NO-1 /Library/Extension takes more time; you can advance ⏭ the video to the installation stage.
 

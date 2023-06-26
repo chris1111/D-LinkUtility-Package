@@ -24,4 +24,4 @@ Password:
 
 View Video: ⬇︎
 
-[![Modular Image Creation](https://github.com/chris1111/D-LinkUtility-Package/assets/6248794/e3b6b097-73fe-431a-b2de-97f8f1a06c1c)](https://youtu.be/WvrGhCJda2c)
+[![Modular Image Creation](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Troubleshooting.png)https://github.com/chris1111/D-LinkUtility-Package/blob/main/Troubleshooting.png)](https://youtu.be/WvrGhCJda2c)

@@ -1,6 +1,6 @@
 # D-LinkUtility-Package
 
-### Update 26 june 2023 Release V8 Fix issue install /Library/Extensions/
+### Update 26 june 2023 Release V8 Fix issue install /Library/Extensions/ Ventura 13.4+
 
 ### Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma
 

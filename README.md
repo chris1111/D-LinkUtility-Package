@@ -15,7 +15,7 @@
 
 ## For Troubleshooting see ➣ [Troubleshooting](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Troubleshooting.md)
 
-## For SIP Activate ➣ [Notarized-RT2870USBWirelessDriver](https://github.com/chris1111/D-LinkUtility-Package/releases/download/V8/Notarized-RT2870USBWirelessDriver.zip)
+## For SIP Activate ➣ [Notarized-RT2870USBWirelessDriver](https://github.com/chris1111/D-LinkUtility-Package/releases/download/V9/Notarized-RT2870USBWirelessDriver.zip)
 
 ### Credits: 
 - [(chris1111)](https://github.com/chris1111) 

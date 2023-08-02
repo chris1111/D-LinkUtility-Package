@@ -2,7 +2,7 @@
 
 ### Update 30 june 2023 Release V9 Add SIP Checker
 
-### Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma
+### Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14
 
 ![Screen Shot](https://user-images.githubusercontent.com/6248794/160261973-91d444cb-3144-455b-96fa-2ba8bf464798.png)
 

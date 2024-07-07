@@ -8,7 +8,7 @@
 
 ### An old D-Link project that I redid to adapt it to macOS Big Sur 11 and macOS Monterey 12
 
-###  This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14 only!
+###  This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15 only!
 
 
 - SIP Security and Gatekeeper must be disable

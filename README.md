@@ -6,7 +6,7 @@
 
 ![Screen Shot](https://user-images.githubusercontent.com/6248794/160261973-91d444cb-3144-455b-96fa-2ba8bf464798.png)
 
-### An old D-Link project that I redid to adapt it to macOS Big Sur 11 and macOS Monterey 12
+### An old D-Link project that I redid to adapt it to macOS Big Sur 11 and macOS Monterey 12, Ventura 13, macOS Sonoma 14
 
 ###  This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14 only!
 

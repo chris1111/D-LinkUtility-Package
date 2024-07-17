@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # D-LinkUtility-Package
 
 ### Update 16 Jul 2024 Support macOS Sequoia 15

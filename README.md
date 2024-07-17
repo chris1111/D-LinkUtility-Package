@@ -8,7 +8,7 @@
 
 ### An old D-Link project that I redid to adapt it to new macOS System
 
-###  This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15 only!
+### This utility Works from macOS Catalina 10.15 to Sequoia 15
 
 
 - SIP Security and Gatekeeper must be disable

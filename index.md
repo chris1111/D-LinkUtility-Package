@@ -49,15 +49,13 @@ layout: default
 ##### The tests are carried out with an [Alfa AWUS036ACM](https://www.amazon.ca/Alfa-AWUS036ACM-Long-Range-Dual-Band-Wireless/dp/B073X6RL9D) adapter which is more recognized at 5gig USB speed in macOS Monterey 12 See Result ➤  [5gig USB speed](https://user-images.githubusercontent.com/6248794/160301333-85e357d4-29ab-4520-b70f-970858cfec28.png)
 
 
-## 🔽 Follow Video  from Monterey 12 
-`You will need to have Router Info before using this program!`
-## View Router Infos: ⬇︎
-<details> 
-  <summary>Router Infos</summary>
-  
-  ![RouterInfos](https://github.com/chris1111/D-LinkUtility-Package/assets/6248794/c3e00bdf-0757-4b40-83a1-713364b54e1a)
 
- </details>
+`You will need to have Router Info before using this program!`
+
+## View Router Infos: ➤ [RouterInfos]https://github.com/chris1111/D-LinkUtility-Package/blob/main/Router.md)
+
+## 🔽 Follow Video  from Monterey 12 
+
   
 - Video in three stages, NO-1 /Library/Extensions, NO-2 clover, NO-3 OpenCore
 - NOTE: stages, NO-1 /Library/Extension takes more time; you can advance ⏭ the video to the installation stage.

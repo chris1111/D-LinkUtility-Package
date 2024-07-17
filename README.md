@@ -15,6 +15,8 @@
 
 ## For Troubleshooting see ➣ [Troubleshooting](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Troubleshooting.md)
 
+## Download Latest release ➤ V10 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V10)
+----------------------------------------------------------------
 ## For SIP Activate ➣ [Notarized-RT2870USBWirelessDriver](https://github.com/chris1111/D-LinkUtility-Package/releases/download/V10/Notarized-RT2870USBWirelessDriver.zip)
 
 ### Credits: 
@@ -40,8 +42,6 @@
 ### Support Drivers:
 - MT7601, MT7610, RT5370, RT2870, RT3071, RT2770, RT5572, RT3572, RT3072, RT3070, RT3573, MT7621U
 
-#### Download Latest release ➤ V10 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V10)
-----------------------------------------------------------------
 ##### The tests are carried out with an [Alfa AWUS036ACM](https://www.amazon.ca/Alfa-AWUS036ACM-Long-Range-Dual-Band-Wireless/dp/B073X6RL9D) adapter which is more recognized at 5gig USB speed in macOS Monterey 12 See Result ➤  [5gig USB speed](https://user-images.githubusercontent.com/6248794/160301333-85e357d4-29ab-4520-b70f-970858cfec28.png)
 
 

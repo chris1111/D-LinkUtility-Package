@@ -1,7 +1,9 @@
 #!/bin/bash
 # D-LinkUtility-Package
-# Copyright (c) 2021, 2022 chris1111. All Right Reserved
+# Copyright (c) 2021, 2024 chris1111. All Right Reserved
+# Credit: Mediatek
 # Credit: Acidanthera
+# Credit: Clover Team
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
 # copyright notice and this permission notice appear in all copies.
@@ -14,18 +16,40 @@
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 # Vars
 apptitle="D-LinkUtility-Package"
-version="1.0"
+version="10.0"
 # Set Icon directory and file 
 export ICNS=$(dirname "${0}")
 iconfile="$ICNS/AppIcon.icns"
 Sleep 1
 echo "DETAILS:HIDE"
 echo "PROGRESS:0"
+
+function vertifySIP {
+	echo -n "Verifying SIP..."
+	if [[ "$(csrutil status | grep "System Integrity Protection status: disabled." | wc -l)" == "       0" && "$(csrutil status | grep "Filesystem Protections: disabled" | wc -l)" == "       0" ]]; then
+		echo ""
+osascript -e 'tell app "System Events" to display dialog "SIP is enabled on this system. 
+Please disable the SIP from Bootloader or boot into Recovery HD or an Installer USB drive, open a new Terminal Window, and enter csrutil disable. When completed, reboot back into your standard macOS install, and run this Program again." with icon file "System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:FileVaultIcon.icns" buttons {"OK"} default button 1 with title "D-LinkUtility-Package (Error SIP Enable)"'
+
+osascript -e 'display notification "Program closing" sound name "default" with title "'"$apptitle"'" subtitle "SIP is Enable"'
+echo "QUITAPP"
+exit 0
+		return 1
+	fi
+	return 0		
+		
+}
+
+vertifySIP
+
+Sleep 2
+
 response=$(osascript -e 'tell app "System Events" to display dialog "
-This utility Working for macOS Catalina, Big Sur 11, Monterey 12, Ventura 13 only!
+This utility Works from macOS Catalina 10.15 to Sequoia 15
 
 Select an option 
 Install Utility or Uninstall\nCancel for Quit" buttons {"Cancel", "Install Utility" ,"Uninstall Utility"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
 
 action=$(echo $response | cut -d ':' -f2)
 
@@ -43,8 +67,10 @@ osascript <<EOD
 EOD
 if [ "$action" == "Uninstall Utility" ] ; then
 Open ./Input/UninstallD-LinkUtility.pkg
+echo "Open Uninstaller"
 Sleep 1
 echo "QUITAPP"
+  exit 0
 fi
 
 response=$(osascript -e 'tell app "System Events" to display dialog "
@@ -52,8 +78,6 @@ Select an option
 Install with Bootloader or Install on /Library/Extensions\n" buttons {"Install OC", "Install Clover" ,"Install /Library/Extensions"} default button 1 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
 action=$(echo $response | cut -d ':' -f2)
-
-
 
 
 osascript <<EOD
@@ -133,14 +157,10 @@ echo "Install Done"
 
   fi
 
-
 # Exit if Canceled
-if [ "$action" == "Cancel" ] ; then
-  osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+if [ ! "$action" ] ; then
   osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
-  echo "Program closing in 2 seconds User cancelled"
-  Sleep 2
-  echo "QUITAPP"
+echo "QUITAPP"
   exit 0
 fi
 
@@ -217,14 +237,10 @@ echo "Install Done"
 
   fi
 
-
 # Exit if Canceled
-if [ "$action" == "Cancel" ] ; then
-  osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+if [ ! "$action" ] ; then
   osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
-  echo "Program closing in 2 seconds User cancelled"
-  Sleep 2
-  echo "QUITAPP"
+echo "QUITAPP"
   exit 0
 fi
 
@@ -304,14 +320,10 @@ echo "Install Done"
 
   fi
 
-
 # Exit if Canceled
-if [ "$action" == "Cancel" ] ; then
-  osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+if [ ! "$action" ] ; then
   osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
-  echo "Program closing in 2 seconds User cancelled"
-  Sleep 2
-  echo "QUITAPP"
+echo "QUITAPP"
   exit 0
 fi
 

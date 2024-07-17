@@ -52,7 +52,7 @@ layout: default
 
 `You will need to have Router Info before using this program!`
 
-## View Router Infos: ➤ [RouterInfos]https://github.com/chris1111/D-LinkUtility-Package/blob/main/Router.md)
+## View Router Infos: ➤ [Router Infos](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Router.md)
 
 ## 🔽 Follow Video  from Monterey 12 
 

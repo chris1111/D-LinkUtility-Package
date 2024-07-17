@@ -1,6 +1,6 @@
 # D-LinkUtility-Package
 
-### Update 30 june 2023 Release V9 Add SIP Checker
+### Update 16 Jul 2024 Support macOS Sequoia 15
 
 ### Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15
 

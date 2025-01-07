@@ -1,11 +1,11 @@
 ### Setup Access point connection
 
-![Screenshot1](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Access-Point/Setup1.png)
+![1](https://github.com/user-attachments/assets/2c49f88f-23f6-4c89-89bd-1259ba211f60)
 
-![Screenshot2](https://github.com/chris1111/D-LinkUtility-Package/blob/gmain/Access-Point/Setup2.png)
+![2](https://github.com/user-attachments/assets/0d85d59c-48b0-4562-b00f-9df73081defb)
 
-![Screenshot3](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Access-Point/Setup3.png)
+![3](https://github.com/user-attachments/assets/4d32f689-b26a-424c-bf7e-133a7a27b862)
 
-![Screenshot4](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Access-Point/Setup4.png)
+![4](https://github.com/user-attachments/assets/a43b98f4-ec8d-4e38-bf7c-dc9113184ea0)
 
-![Screenshot5](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Access-Point/Setup5.png)
+![5](https://github.com/user-attachments/assets/43fbcea4-de8b-4c67-9e2b-f8ce732643a5)

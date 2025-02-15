@@ -4,6 +4,8 @@ layout: default
 
 # D-LinkUtility-Package
 
+[![pages-build-deployment](https://github.com/chris1111/D-LinkUtility-Package/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/chris1111/D-LinkUtility-Package/actions/workflows/pages/pages-build-deployment)
+
 ### Update 16 Jul 2024 Support macOS Sequoia 15
 
 ### Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15

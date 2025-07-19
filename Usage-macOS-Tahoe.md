@@ -25,7 +25,7 @@ Follow every steps in the images bellow: ⬇︎
 ## Revert the Patch (Uninstall OCLP-Mod) ⬇︎
 <img width="712" height="443" alt="Image" src="https://github.com/user-attachments/assets/0011180c-84d8-45a4-a20d-736cf5fd4d3b" />
 
-After reboot you can use [D-LinkUtility-Package](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V10)
+After reboot you can use [D-LinkUtility-Package](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V11)
                           
 
 Success ⬇︎

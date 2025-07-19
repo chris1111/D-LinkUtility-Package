@@ -9,8 +9,6 @@
 		<string>YES</string>
 		<key>Authentication Type</key>
 		<string>3</string>
-		<key>BSSID</key>
-		<string>MAC ADRESSE</string>
 		<key>Channel</key>
 		<string>1</string>
 		<key>Encryption Type</key>
@@ -25,12 +23,8 @@
 		<string>0</string>
 		<key>Preamble Type</key>
 		<string>0</string>
-		<key>Profile Name</key>
-		<string>NETWORK NAME</string>
 		<key>RTS Threshold</key>
 		<string>2347</string>
-		<key>SSID</key>
-		<string>NETWORK NAME</string>
 		<key>Tx Power</key>
 		<string>0</string>
 		<key>WEPKey1</key>
@@ -51,8 +45,6 @@
 		<string>0</string>
 		<key>WEPKeyUse</key>
 		<string>0</string>
-		<key>WPAPSK</key>
-		<string>WIFI NETWORK PASWORD</string>
 	</dict>
 </array>
 </plist>

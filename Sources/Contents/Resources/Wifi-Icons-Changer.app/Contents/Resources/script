@@ -1,0 +1,116 @@
+#!/bin/bash
+# WifiIcons
+# Copyright (c) 2025, chris1111. All Right Reserved
+# Vars
+apptitle="Wifi-Icons-Changer"
+version="1.0"
+# Set Icon directory and file 
+export ICNS=$(dirname "${0}")
+iconfile="$ICNS/AppIcon.icns"
+Sleep 1
+echo "DETAILS:HIDE"
+echo "PROGRESS:0"
+
+response=$(osascript -e 'tell app "System Events" to display dialog "
+Change Wifi Icons
+Only use after installing D-LinkUtility-Package.\nCancel for Quit" buttons {"Cancel", "Wifi Default Icon Blue" ,"Wifi Icon White"} default button 3 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
+
+action=$(echo $response | cut -d ':' -f2)
+
+# Exit if Canceled
+if [ ! "$action" ] ; then
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+echo "QUITAPP"
+  exit 0
+fi
+
+osascript <<EOD
+  tell application "Wifi-Icons-Changer"
+      activate
+  end tell
+EOD
+if [ "$action" == "Wifi Default Icon Blue" ] ; then
+echo "DETAILS:HIDE"
+echo "PROGRESS:0"
+sleep 1
+echo "PROGRESS:10"
+sleep 1
+echo "PROGRESS:20"
+sleep 1
+echo "Install Wifi Default Icon Blue"
+sleep 1
+echo "PROGRESS:30"
+Sleep 1
+echo "PROGRESS:40"
+sleep 1
+echo "PROGRESS:50"
+sleep 1
+echo "PROGRESS:60"
+sleep 2
+echo "PROGRESS:80"
+sleep 1
+echo "PROGRESS:90"
+sleep 1
+echo "PROGRESS:100"
+echo "Install Wifi Default Icon Blue"
+echo "DETAILS:SHOW"
+Sleep 3
+echo "Done"
+cp ./IconsBlue/*.tiff /Applications/Wifi-Utility.app/Contents/Resources/
+osascript -e 'tell app "System Events" to log out'
+Sleep 1
+echo "QUITAPP"
+  exit 0
+fi
+
+
+
+osascript <<EOD
+  tell application "Wifi-Icons-Changer"
+      activate
+  end tell
+EOD
+
+
+if [ "$action" == "Wifi Icon White" ] ; then
+echo "DETAILS:HIDE"
+echo "PROGRESS:0"
+sleep 1
+echo "PROGRESS:10"
+sleep 1
+echo "PROGRESS:20"
+sleep 1
+echo "Install Wifi Icon White"
+sleep 1
+echo "PROGRESS:30"
+Sleep 1
+echo "PROGRESS:40"
+sleep 1
+echo "PROGRESS:50"
+sleep 1
+echo "PROGRESS:60"
+sleep 2
+echo "PROGRESS:80"
+sleep 1
+echo "PROGRESS:90"
+sleep 1
+echo "PROGRESS:100"
+echo "Install Wifi Icon White"
+echo "DETAILS:SHOW"
+Sleep 3
+echo "Done"
+cp ./IconsWhite/*.tiff /Applications/Wifi-Utility.app/Contents/Resources/
+osascript -e 'tell app "System Events" to log out'
+Sleep 1
+echo "QUITAPP"
+  exit 0
+fi
+
+# Exit if Canceled
+if [ ! "$action" ] ; then
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+echo "QUITAPP"
+  exit 0
+fi
+

@@ -1,9 +1,10 @@
 #!/bin/bash
 # D-LinkUtility-Package
-# Copyright (c) 2021, 2024 chris1111. All Right Reserved
+# Copyright (c) 2021, 2025 chris1111. All Right Reserved
 # Credit: Mediatek
 # Credit: Acidanthera
 # Credit: Clover Team
+# Credit: OCLP-Mod Team
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
 # copyright notice and this permission notice appear in all copies.
@@ -20,9 +21,7 @@ version="10.0"
 # Set Icon directory and file 
 export ICNS=$(dirname "${0}")
 iconfile="$ICNS/AppIcon.icns"
-Sleep 1
 echo "DETAILS:HIDE"
-echo "PROGRESS:0"
 
 function vertifySIP {
 	echo -n "Verifying SIP..."
@@ -45,7 +44,7 @@ vertifySIP
 Sleep 2
 
 response=$(osascript -e 'tell app "System Events" to display dialog "
-This utility Works from macOS Catalina 10.15 to Sequoia 15
+This utility Works from macOS Catalina 10.15 to macOS Tahoe 26
 
 Select an option 
 Install Utility or Uninstall\nCancel for Quit" buttons {"Cancel", "Install Utility" ,"Uninstall Utility"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
@@ -154,6 +153,15 @@ osascript <<EOD
   end tell
 EOD
 echo "Install Done"
+Sleep 3
+echo "DETAILS:HIDE"
+Sleep 1
+osascript <<EOD
+  tell application "loginwindow"
+	«event aevtrrst»
+  end tell
+EOD
+echo "QUITAPP"
 
   fi
 
@@ -233,7 +241,15 @@ osascript <<EOD
   end tell
 EOD
 echo "Install Done"
-
+Sleep 3
+echo "DETAILS:HIDE"
+Sleep 1
+osascript <<EOD
+  tell application "loginwindow"
+	«event aevtrrst»
+  end tell
+EOD
+echo "QUITAPP"
 
   fi
 
@@ -316,7 +332,15 @@ osascript <<EOD
   end tell
 EOD
 echo "Install Done"
-
+Sleep 3
+echo "DETAILS:HIDE"
+Sleep 1
+osascript <<EOD
+  tell application "loginwindow"
+	«event aevtrrst»
+  end tell
+EOD
+echo "QUITAPP"
 
   fi
 

@@ -23,6 +23,7 @@ Network Name:
 Password:
 `A67DC74E`
 
-View Video: ⬇︎ Plis-Edit Troubleshooting as change, its not exactly the same on the video
-
+View Video: ⬇︎ Plis-Edit Troubleshooting as change, its not exactly the same on the video.
+- Just follow the instructions mentioned above.
+  
 [![Modular Image Creation](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Files%20Troubleshooting/Troubleshooting.png)](https://youtu.be/WvrGhCJda2c)

@@ -30,4 +30,7 @@ After reboot you can use [D-LinkUtility-Package](https://github.com/chris1111/D-
 
 Success ⬇︎
 
-![Screenshot Tahoe](https://github.com/user-attachments/assets/3d6ca0c5-1f15-4e9c-8f08-5139a6fc8815)
+<img width="849" height="1001" alt="Screenshot 2025-07-19 at 9 08 24 AM" src="https://github.com/user-attachments/assets/cdf2ea3d-ab4b-4135-a3ac-6a0647e4bfcf" />
+
+<img width="835" height="737" alt="Screenshot 2025-07-19 at 9 09 32 AM" src="https://github.com/user-attachments/assets/eb68567c-a3da-4670-887a-148a5a9edd9a" />
+

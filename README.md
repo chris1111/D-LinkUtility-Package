@@ -5,7 +5,7 @@
 ### Update 19 Jul 2025 Support macOS Tahoe 26
 
 ### Support: 
-- macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15, [Usage macOS Tahoe 26](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Usage-macOS-Tahoe.md)
+macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15, [Usage macOS Tahoe 26](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Usage-macOS-Tahoe.md)
 
 ![Screen Shot](https://user-images.githubusercontent.com/6248794/160261973-91d444cb-3144-455b-96fa-2ba8bf464798.png)
 

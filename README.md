@@ -2,9 +2,9 @@
 
 [![pages-build-deployment](https://github.com/chris1111/D-LinkUtility-Package/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/chris1111/D-LinkUtility-Package/actions/workflows/pages/pages-build-deployment)
 
-### Update 16 Jul 2024 Support macOS Sequoia 15
+### Update 19 Jul 2025 Support macOS Tahoe 26
 
-### Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15
+#### Support macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15, [Usage macOS Tahoe 26](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Usage-macOS-Tahoe.md)
 
 ![Screen Shot](https://user-images.githubusercontent.com/6248794/160261973-91d444cb-3144-455b-96fa-2ba8bf464798.png)
 
@@ -17,7 +17,7 @@
 
 ## For Troubleshooting see ➣ [Troubleshooting](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Troubleshooting.md)
 
-## Download Latest release ➤ V10 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V10)
+## Download Latest release ➤ V11 [D-LinkUtility-Package.zip](https://github.com/chris1111/D-LinkUtility-Package/releases/tag/V11)
 ----------------------------------------------------------------
 ## For SIP Activate ➣ [Notarized-RT2870USBWirelessDriver](https://github.com/chris1111/D-LinkUtility-Package/releases/download/V10/Notarized-RT2870USBWirelessDriver.zip)
 
@@ -27,6 +27,10 @@
 - [(D-Link)](https://us.dlink.com/en/consumer) 
 - [(Mediatek)](https://www.mediatek.com)
 - [(ghost8282)](https://www.insanelymac.com/forum/profile/2241085-ghost8282/)
+- [(Acidanthera)](https://github.com/acidanthera)
+- [(Clover Team)](https://github.com/CloverHackyColor/CloverBootloader)
+- [(OCLP-Mod laobamac)](https://github.com/laobamac/OCLP-Mod)
+
 
 ## For Real Mac and Hackintosh
 ## For /Library/Extensions

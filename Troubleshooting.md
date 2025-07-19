@@ -1,7 +1,7 @@
 Troubleshooting: ⬇︎
 
 After installing D-LinkUtility-Package and if you have a compatible Adapter and it does not go as expected.
-- Do not uninstall the app
+- Do not uninstall D-LinkUtility-Package
 
 Use this PlistEdit.app ➤ [Plist-Edit.zip](https://github.com/user-attachments/files/21328358/Plist-Edit.zip) To attempt to establish the connection If you don't have any native Wifi.
 

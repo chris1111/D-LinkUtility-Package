@@ -1,5 +1,5 @@
 title: D-LinkUtility-Package
-description: Drivers for Mediatek High-performance 802.11n USB Wi-Fi adapters.
+description: Drivers for Mediatek High-performance 802.11n and 802.11ac USB Wi-Fi adapters.
 github: 
   repository_url: https://github.com/chris1111/D-LinkUtility-Package
 remote_theme: chris1111/cayman-dark

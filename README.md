@@ -28,6 +28,7 @@ macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequ
 - [(D-Link)](https://us.dlink.com/en/consumer) 
 - [(Mediatek)](https://www.mediatek.com)
 - [(ghost8282)](https://www.insanelymac.com/forum/profile/2241085-ghost8282/)
+- [(djams)](https://github.com/djams2904)
 - [(Acidanthera)](https://github.com/acidanthera)
 - [(Clover Team)](https://github.com/CloverHackyColor/CloverBootloader)
 - [(OCLP-Mod laobamac)](https://github.com/laobamac/OCLP-Mod)

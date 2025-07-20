@@ -17,8 +17,7 @@ macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequ
 
 ### If you want to use this program I Recommand ➥ [Alfa AWUS036ACM Wifi USB Adapter](https://www.amazon.ca/Alfa-AWUS036ACM-Long-Range-Dual-Band-Wireless/dp/B073X6RL9D)
 
-### This utility Works from macOS Catalina 10.15 to Sequoia 15
-
+### This utility Works from macOS Catalina 10.15 to macOS Tahoe 26
 
 - SIP Security and Gatekeeper must be disable
 

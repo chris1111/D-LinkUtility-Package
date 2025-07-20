@@ -6,7 +6,7 @@ layout: default
 
 [![pages-build-deployment](https://github.com/chris1111/D-LinkUtility-Package/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/chris1111/D-LinkUtility-Package/actions/workflows/pages/pages-build-deployment)
 
-### Drivers for Mediatek 802.11n USB Wi-Fi adapters
+### Drivers for Mediatek 802.11n and 802.11ac USB Wi-Fi adapters
 
 ### Update 19 Jul 2025 Support macOS Tahoe 26
 

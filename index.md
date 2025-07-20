@@ -15,6 +15,8 @@ macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequ
 
 ### An old D-Link project that I redid to adapt it to new macOS System
 
+### [Recommand Wifi USB Adapter](https://www.amazon.ca/Alfa-AWUS036ACM-Long-Range-Dual-Band-Wireless/dp/B073X6RL9D)
+
 ### This utility Works from macOS Catalina 10.15 to Sequoia 15
 
 

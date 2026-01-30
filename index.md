@@ -14,7 +14,7 @@ layout: default
 ### Support: 
 macOS Catalina, Big Sur 11, Monterey 12, Ventura 13, macOS Sonoma 14, macOS Sequoia 15, [Usage macOS Tahoe 26](https://github.com/chris1111/D-LinkUtility-Package/blob/main/Usage-macOS-Tahoe.md)
 
-<img width="604" height="389" alt="ScreenShot" src="https://github.com/user-attachments/assets/0c113a84-2016-4a4d-9877-d7243aeee3e7" />
+<img width="604" height="389" alt="ScreenShot" src="https://github.com/user-attachments/assets/156ba5d6-c1b2-402e-b772-42b7b5bd30ac" />
 
 ### An old D-Link project that I redid to adapt it to new macOS System
 

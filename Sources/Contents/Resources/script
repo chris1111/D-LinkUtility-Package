@@ -17,7 +17,7 @@
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 # Vars
 apptitle="D-LinkUtility-Package"
-version="10.0"
+version="11.2"
 # Set Icon directory and file 
 export ICNS=$(dirname "${0}")
 iconfile="$ICNS/AppIcon.icns"

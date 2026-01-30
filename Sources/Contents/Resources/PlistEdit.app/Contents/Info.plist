@@ -10,12 +10,14 @@
 	<string>applet</string>
 	<key>CFBundleIconFile</key>
 	<string>applet</string>
+	<key>CFBundleIconName</key>
+	<string>applet</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.ScriptEditor.id.Plist-Edit</string>
+	<string>com.apple.ScriptEditor.id.PlistEdit</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Plist-Edit</string>
+	<string>PlistEdit</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -66,9 +68,9 @@
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
-		<real>443</real>
+		<real>301</real>
 		<key>savedFrame</key>
-		<string>451 249 1469 678 0 0 1920 1055 </string>
+		<string>277 285 1349 564 0 0 1920 1050 </string>
 		<key>selectedTab</key>
 		<string>description</string>
 	</dict>

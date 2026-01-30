@@ -222,19 +222,19 @@ action=$(echo $response | cut -d ':' -f2)
     Open -a /Applications/Wifi-Utility.app
     echo "Install CloverD-LinkUtility.pkg"
     osascript -e 'do shell script "installer -allowUntrusted -verboseR -pkg ./Input/CloverD-LinkUtility.pkg -target /" with administrator privileges'
-echo "Install Utility-Package Done"
-Sleep 1
-cp -r ./Input/ActiveProfileSetting.plist /Private/tmp
-Sleep 1
-cp -r ./Input/AdvancedProfileSetting.plist $HOME/Library/Preferences
-sleep 1
-echo "Open PlistEdit"
-osascript ./Input/PlistEdit.app
-echo "PROGRESS:90"
-sleep 1
-echo "PROGRESS:100"
-echo "DETAILS:SHOW"
-Sleep 3
+    echo "Install Utility-Package Done"
+    Sleep 1
+    cp -r ./Input/ActiveProfileSetting.plist /Private/tmp
+    Sleep 1
+    cp -r ./Input/AdvancedProfileSetting.plist $HOME/Library/Preferences
+    sleep 1
+    echo "Open PlistEdit"
+    osascript ./Input/PlistEdit.app
+    echo "PROGRESS:90"
+    sleep 1
+    echo "PROGRESS:100"
+    echo "DETAILS:SHOW"
+    Sleep 3
 osascript <<EOD
   tell application "D-LinkUtility-Package"
       activate
@@ -311,37 +311,31 @@ action=$(echo $response | cut -d ':' -f2)
     osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Wifi-Utility.app", hidden:false}'
     Sleep 1
     Open -a /Applications/Wifi-Utility.app
+    Sleep 1
+    cp -r ./Input/ActiveProfileSetting.plist /Private/tmp
+    Sleep 1
+    cp -r ./Input/AdvancedProfileSetting.plist $HOME/Library/Preferences
+    sleep 1
+    echo "Open PlistEdit"
+    osascript ./Input/PlistEdit.app
+    echo "PROGRESS:90"
+    Sleep 1
     echo "Install D-LinkUtility.pkg"
     osascript -e 'do shell script "installer -allowUntrusted -verboseR -pkg ./Input/D-LinkUtility.pkg -target /" with administrator privileges'
-echo "Install Utility-Package Done"
-Sleep 1
-cp -r ./Input/ActiveProfileSetting.plist /Private/tmp
-Sleep 1
-cp -r ./Input/AdvancedProfileSetting.plist $HOME/Library/Preferences
-sleep 1
-echo "Open PlistEdit"
-osascript ./Input/PlistEdit.app
-echo "PROGRESS:90"
-sleep 1
-echo "PROGRESS:100"
-echo "DETAILS:SHOW"
-Sleep 3
+    echo "Install Utility-Package Done"
+    echo "PROGRESS:100"
+    echo "DETAILS:SHOW"
 osascript <<EOD
   tell application "D-LinkUtility-Package"
       activate
   end tell
 EOD
-echo "Install Done"
-Sleep 3
-echo "DETAILS:HIDE"
-Sleep 1
-osascript <<EOD
-  tell application "loginwindow"
-	«event aevtrrst»
-  end tell
-EOD
-echo "QUITAPP"
-
+    echo "Install Done"
+    Sleep 1
+    echo "DETAILS:HIDE"
+    Open ./Input/Screenshot.png
+    Sleep 1
+    echo "QUITAPP"
   fi
 
 # Exit if Canceled
